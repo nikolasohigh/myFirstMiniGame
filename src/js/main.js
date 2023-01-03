@@ -5,7 +5,7 @@ const winWrapper = document.querySelector('.wrapper-win');
 const loseWrapper = document.querySelector('.wrapper-lose');
 const mainWrapper = document.querySelector('.wrapper-main')
 const position = Math.floor(Math.random() * 9);
-console.log('pos = ' + position);
+//console.log('pos = ' + position);
 
 const lifes = 3;
 let clicks = 0;
@@ -14,7 +14,7 @@ targets.forEach((item, i) => {
     item.addEventListener('click', function clickCheck() {
         item.classList.add('hidden-blue');
         clicks++;
-        console.log('click on ' + i);
+        //console.log('click on ' + i);
         if (winCheck(i, item) === 1) showWin();
         else if (winCheck(i, item) === -1) showLose();
     });
